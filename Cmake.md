@@ -25,7 +25,7 @@ sudo make install
     └── main.c
 
 mkdir build & cd build
-cmake 
+cmake ..
 make
 ./src/main	
 ```
