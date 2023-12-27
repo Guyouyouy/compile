@@ -356,17 +356,45 @@ inc_path = ./inc
 
 myArgs = -Wall -g
 
-ALL : a.out
+ALL : myName
 
 $(obj) : ./obj/%.o : ./src/%.c
 	gcc -c $< -o $@ $(myArgs) -I $(inc_path)
 
-a.out : $(obj)
+myName : $(obj)
 	gcc $^ -o $@ $(myArgs)
 
 clean :
-	-rm -rf $(obj) a.out
+	-rm -rf $(obj) myName
 
 .PHONY : clean ALL
 ```
-
+.
+├── inc
+│   └── head.h
+├── Makefile
+├── obj
+│   ├── add.o
+│   ├── div.o
+│   ├── hello.o
+│   ├── mul.o
+│   └── sub.o
+├── src
+│   ├── add.c
+│   ├── div.c
+│   ├── hello.c
+│   ├── mul.c
+│   └── sub.c
+└── myName
+```
+.
+├── inc
+│   └── head.h
+├── Makefile
+├── obj
+└── src
+    ├── add.c
+    ├── div.c
+    ├── hello.c
+    ├── mul.c
+    └── sub.c
