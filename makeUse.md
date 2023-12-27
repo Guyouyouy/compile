@@ -369,6 +369,8 @@ clean :
 
 .PHONY : clean ALL
 ```
+
+```makefile
 .
 ├── inc
 │   └── head.h
@@ -387,6 +389,8 @@ clean :
 │   └── sub.c
 └── myName
 ```
+
+```makefile
 .
 ├── inc
 │   └── head.h
@@ -398,3 +402,4 @@ clean :
     ├── hello.c
     ├── mul.c
     └── sub.c
+```
