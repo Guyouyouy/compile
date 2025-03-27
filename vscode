@@ -1,0 +1,12 @@
+{
+  "version":"0.2.0",
+  "configurations":[
+    {
+      "type":"cppdbg",
+      "request":"attach",
+      "processId":"",
+      "program":"/data/..",
+      "name":"wpo",
+    }
+  ]
+}
